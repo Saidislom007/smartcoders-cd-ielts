@@ -4,9 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port $PORT --host",
+    "start": "vite preview --port $PORT --host"
+  }
 },
   "dependencies": {
     "@react-three/fiber": "^9.3.0",

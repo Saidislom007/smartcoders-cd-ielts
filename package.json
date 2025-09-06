@@ -8,8 +8,7 @@
     "build": "vite build",
     "preview": "vite preview --port $PORT --host",
     "start": "vite preview --port $PORT --host"
-  }
-},
+  },
   "dependencies": {
     "@react-three/fiber": "^9.3.0",
     "@tabler/icons-react": "^3.34.1",

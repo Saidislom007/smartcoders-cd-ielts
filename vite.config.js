@@ -32,7 +32,11 @@ export default defineConfig(({ mode }) => {
     },
 
     preview: {
-      port: 4173, // `npm run preview` uchun default port
+      port: process.env.PORT || 4173,
+      host: true,
+      allowedHosts: [
+        "smartcoders-cd-ielts.onrender.com"
+      ]
     },
   }
 })

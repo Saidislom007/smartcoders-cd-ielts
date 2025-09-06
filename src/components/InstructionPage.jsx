@@ -9,7 +9,7 @@ const instructions = {
       "Write your answers on the answer sheet provided.",
       "Focus on spelling and grammar for written answers."
     ],
-    audio: "./audio.mp3"
+    
   },
   reading: {
     title: "Reading Instructions",
@@ -87,14 +87,7 @@ const InstructionPage = ({ section }) => {
       </ul>
 
       {/* 🎧 Listening audio player */}
-      {section === "listening" && sectionInstructions.audio && (
-        <div className="mt-6  justify-items-center">
-          <audio controls>
-            <source src={sectionInstructions.audio} type="audio/mpeg" />
-            Your browser does not support the audio element.
-          </audio>
-        </div>
-      )}
+      
 
       {/* 🎙️ Speaking recorder */}
       {section === "speaking" && (
